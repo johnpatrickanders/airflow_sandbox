@@ -1,0 +1,28 @@
+[2023-06-03 18:48:56,797] {jobs.py:398} INFO - Started process (PID=39710) to work on /Users/jpa/Desktop/airflow_sandbox/airflow/dags/tutorial.py
+[2023-06-03 18:48:56,803] {jobs.py:1711} INFO - Processing file /Users/jpa/Desktop/airflow_sandbox/airflow/dags/tutorial.py for tasks to queue
+[2023-06-03 18:48:56,804] {logging_mixin.py:95} INFO - [2023-06-03 18:48:56,804] {__init__.py:305} INFO - Filling up the DagBag from /Users/jpa/Desktop/airflow_sandbox/airflow/dags/tutorial.py
+[2023-06-03 18:48:56,814] {logging_mixin.py:95} INFO - [2023-06-03 18:48:56,807] {__init__.py:416} ERROR - Failed to import: /Users/jpa/Desktop/airflow_sandbox/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/Users/jpa/Desktop/airflow_sandbox/.venv/lib/python3.7/site-packages/airflow/models/__init__.py", line 413, in process_file
+    m = imp.load_source(mod_name, filepath)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.7/lib/python3.7/imp.py", line 171, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/jpa/Desktop/airflow_sandbox/airflow/dags/tutorial.py", line 8, in <module>
+    from airflow.operators.bash import BashOperator
+ModuleNotFoundError: No module named 'airflow.operators.bash'
+[2023-06-03 18:48:56,815] {jobs.py:1725} WARNING - No viable dags retrieved from /Users/jpa/Desktop/airflow_sandbox/airflow/dags/tutorial.py
+[2023-06-03 18:48:56,824] {jobs.py:406} INFO - Processing /Users/jpa/Desktop/airflow_sandbox/airflow/dags/tutorial.py took 0.027 seconds
+[2023-06-03 18:49:36,915] {jobs.py:398} INFO - Started process (PID=39800) to work on /Users/jpa/Desktop/airflow_sandbox/airflow/dags/tutorial.py
+[2023-06-03 18:49:36,920] {jobs.py:1711} INFO - Processing file /Users/jpa/Desktop/airflow_sandbox/airflow/dags/tutorial.py for tasks to queue
+[2023-06-03 18:49:36,921] {logging_mixin.py:95} INFO - [2023-06-03 18:49:36,921] {__init__.py:305} INFO - Filling up the DagBag from /Users/jpa/Desktop/airflow_sandbox/airflow/dags/tutorial.py
+[2023-06-03 18:49:36,928] {jobs.py:1723} INFO - DAG(s) dict_keys(['tutorial']) retrieved from /Users/jpa/Desktop/airflow_sandbox/airflow/dags/tutorial.py
+[2023-06-03 18:49:36,948] {jobs.py:1446} INFO - Processing tutorial
+[2023-06-03 18:49:36,963] {jobs.py:1450} INFO - Created <DagRun tutorial @ 2020-07-07 00:00:00+00:00: scheduled__2020-07-07T00:00:00+00:00, externally triggered: False>
+[2023-06-03 18:49:36,965] {jobs.py:921} INFO - Examining DAG run <DagRun tutorial @ 2020-07-07 00:00:00+00:00: scheduled__2020-07-07T00:00:00+00:00, externally triggered: False>
+[2023-06-03 18:49:36,971] {logging_mixin.py:95} INFO - [2023-06-03 18:49:36,970] {__init__.py:4854} INFO - Marking run <DagRun tutorial @ 2020-07-07 00:00:00+00:00: scheduled__2020-07-07T00:00:00+00:00, externally triggered: False> successful
+[2023-06-03 18:49:36,973] {jobs.py:632} INFO - Skipping SLA check for <DAG: tutorial> because no tasks in DAG have SLAs
+[2023-06-03 18:49:36,976] {jobs.py:406} INFO - Processing /Users/jpa/Desktop/airflow_sandbox/airflow/dags/tutorial.py took 0.061 seconds
